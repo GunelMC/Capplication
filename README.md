@@ -1,6 +1,6 @@
 # Capplication
 
-A simple web application built in 4 hours from scratch with Sinatra and HTTP library. Users can view cat images, favourite and unfavourite them, view their favourite cats and search for cat desciptions by breed.
+A simple web application built in couple of hours from scratch with Sinatra and HTTP library. Users can view cat images, favourite and unfavourite them, view their favourite cats and search for cat desciptions by breed.
 
 I have followed TDD approach, focusing on clean code with clear names, small/frequent commits and well-written tests as much as I can throughout the developement of the program (See Git history and coverage report below).
 

@@ -11,6 +11,7 @@ group :development do
   gem 'http'
   gem 'rack'
   gem 'webrick'
+  gem 'dotenv'
 end
 
 group :test do

@@ -7,5 +7,10 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 
 gem "sinatra", "~> 2.1"
-gem "rspec", "~> 3.10"
-gem "capybara", "~> 3.35"
+
+group :test do
+  gem "rspec", "~> 3.10"
+  gem "capybara", "~> 3.35"
+  gem "webmock"
+end
+

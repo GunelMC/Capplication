@@ -6,7 +6,7 @@ I have followed TDD approach, focusing on clean code with clear names, small/fre
 
 All Http requests have been stubbed and responses mocked.
 
-All tests are passing. App test coveragage: > ![97%](#Screen_Preview)
+All tests are passing. App test coveragage: > [97%](#Screen_Preview)
 
 ## Running the program
 

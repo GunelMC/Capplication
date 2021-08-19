@@ -32,5 +32,12 @@ class CatManager < Sinatra::Base
     redirect '/favourites'
   end
 
+  get "/breeds" do 
+    breeds_response = HTTP.headers(:accept => 'application/json').get("https://api.thecatapi.com/v1/breeds/#{params["breed_id"]}").to_s
+    @breeds = JSON.parse(breeds_response)
+    p @breeds
+    erb :'breeds/index'
+  end 
+
   run! if app_file == $0
 end

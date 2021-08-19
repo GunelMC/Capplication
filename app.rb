@@ -8,6 +8,8 @@ class CatManager < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  enable :method_override
+
   get '/' do
     json_response = HTTP.headers(:accept => 'application/json').get("https://api.thecatapi.com/v1/images/search?limit=3").to_s
     @images = JSON.parse(json_response)
@@ -21,9 +23,14 @@ class CatManager < Sinatra::Base
 
   get '/favourites' do
     json_response = HTTP.headers(:accept => 'application/json', :"x-api-key"=> ENV["API_KEY"]).get("https://api.thecatapi.com/v1/favourites").to_s
-    @favourites = JSON.parse(json_response)
+    @favourite_images = JSON.parse(json_response)
     erb :favourites
-  end 
+  end
+
+  delete '/favourites/:id' do 
+    HTTP.headers(:"content-type"=> 'application/json', :"x-api-key"=> 'e6d7027d-a3a6-48a7-b14a-84b646116158').delete("https://api.thecatapi.com/v1/favourites/#{params[:id]}").to_s
+    redirect '/favourites'
+  end
 
   run! if app_file == $0
 end

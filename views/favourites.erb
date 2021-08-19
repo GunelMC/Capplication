@@ -1,6 +1,10 @@
 <ul>
-  <% @favourites.each do |favourite| %>
+  <% @favourite_images.each do |favourite| %>
     <li><img src="<%= favourite['image']['url'] %>"/>
+    <form action="/favourites/<%=favourite['id']%>" method="post">
+      <input type="hidden" name="_method" value="DELETE"></input>
+      <button class="button my_unfavourite_button" type="submit">Unfavourite</button>
+    </form>
     </li>
   <% end %>
 </ul>

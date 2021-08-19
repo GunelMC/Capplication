@@ -39,7 +39,6 @@ feature 'Viewing cat images' do
       to_return(status: 200, body: stubbed_response_body_json, headers: {})
   
     visit('/')
-    save_and_open_page
 
     expect(page).to have_css("img[src*='https://cdn2.thecatapi.com/images/343.gif']")
     expect(page).to have_css("img[src*='https://cdn2.thecatapi.com/images/MTc5NjcyNQ.jpg']")

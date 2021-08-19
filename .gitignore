@@ -1,2 +1,6 @@
 capybara-*
 .env
+/coverage
+
+# Local cache of Rubocop remote config
+.rubocop-*

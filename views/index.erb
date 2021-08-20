@@ -1,10 +1,11 @@
-<ul>
+<div class="row">
   <% @images.each do |image| %>
-    <li><img src="<%= image['url'] %>"/>
-    <form action="/favourites" method="post">
-      <button class="my_button" type="submit">Favourite</button>
-      <input type="hidden" name="image_id" value="<%=image['id']%>"></input>
-    </form>
-    </li>
-  <% end %>
-</ul>
+    <div class="column">
+      <img class=card_img src="<%= image['url'] %>"/>
+      <form action="/favourites" method="post">
+        <button class="my_button" type="submit">Favourite</button>
+        <input type="hidden" name="image_id" value="<%=image['id']%>"></input>
+      </form>
+    </div>
+    <% end %>
+</div>

@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Cat Application </title>
+    <link rel="stylesheet" href="./stylesheets/application.css">
   </head>
     <body>
+    <div class=header>
       <h1>Capplication</h1>
-      <a href="/favourites">Favourites</a>
-      <a href="/">Home</a>
+        <a href="/favourites">Favourites</a>
+        <a href="/">Home</a>
       <form action="/breeds" method="get">
         <input type="text" name="breed_id"/>
         <input type="submit" value="Search">
       </form>
+       </div>
+        <a class="right" href="/">More</a>
       <%=yield%>
     </body>
   </html>

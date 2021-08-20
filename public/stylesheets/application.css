@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.card_img {
+  width: 100%;
+  height: cover;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.header {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.my_button {
+  display: inline-block;
+  margin-right: 2rem;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+  text-align: center;
+}
+
+.right {
+  float: right;
+}

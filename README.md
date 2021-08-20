@@ -53,4 +53,4 @@ This will serve the application on `localhost:4567` when using the default confi
 - More aethetic frontend - currently the user interface looks bare due to lack of time and focus on functionality.
 - To refactor tests for DRY code - to use fixtures to set-up the testing environment, to focus on application logic and testing behavior. Currently, I have mocked the expected response from the endpoint.
 - To build the backend using our own database to store images liked by specific users and to further customise functionalities provided by the CAT API for our program.
-- Unit tests to test small units of the program in isolation.
+- Logic in the controller(app.rb) could be extarcted to a seperate model, which then could be unit tested.

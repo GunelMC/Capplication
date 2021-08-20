@@ -46,7 +46,7 @@ This will serve the application on `localhost:4567` when using the default confi
 
 ### Sample Page Demo
 
-![Favourites_page](public/assets/img/coveragefavourites_page.png)
+![Favourites_page](public/assets/img/favourites_page.png)
 
 ### Future Work
 

@@ -44,6 +44,10 @@ This will serve the application on `localhost:4567` when using the default confi
 
 ![Coverage](public/assets/img/coverage.png)
 
+### Sample Page Demo
+
+![Favourites_page](public/assets/img/coveragefavourites_page.png)
+
 ### Future Work
 
 - More aethetic frontend - currently the user interface looks bare due to lack of time and focus on functionality.

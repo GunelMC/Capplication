@@ -34,8 +34,6 @@ feature 'Search by breed' do
     stubbed_response_body_json = JSON.generate(stubbed_response_body)
 
     search_by_breed_api_response = {
-    breeds: [
-      {
         weight: {
           imperial: "6 - 12",
           metric: "3 - 7"
@@ -76,9 +74,7 @@ feature 'Search by breed' do
         short_legs: 0,
         wikipedia_url: "https://en.wikipedia.org/wiki/Bengal_(cat)",
         hypoallergenic: 1,
-        reference_image_id: "O3btzLlsO"
-      }
-    ],
+        reference_image_id: "O3btzLlsO",
     id: "NwMUoJYmT",
     url: "https://cdn2.thecatapi.com/images/NwMUoJYmT.jpg",
     width: 2160,
@@ -99,7 +95,7 @@ feature 'Search by breed' do
     click_button('Search')
 
     save_and_open_page
-    expect(page).to have_css("img[src*='https://cdn2.thecatapi.com/images/NwMUoJYmT.jpg']")
+    expect(page).to have_text("Bengal")
 
   end
 end
